@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>StatSync Kick — Settings</title>
+  <style>
+    body { font-family: sans-serif; margin: 16px; }
+    label { display:block; margin:10px 0 4px; }
+    input { width:100%; padding:8px; box-sizing:border-box; }
+    button { margin-top:12px; padding:10px; }
+    .hint { font-size:12px; color:#666; }
+  </style>
+</head>
+<body>
+  <h2>Kick Settings</h2>
+
+  <label>Kick Channel (slug)</label>
+  <input id="channel" placeholder="ör: poyraz" />
+
+  <label>Kick Cookie (<code>__Secure-next-auth.session-token</code>)</label>
+  <input id="cookie" placeholder="tarayıcıdan kopyalayın" />
+
+  <div class="hint">Cookie tarayıcı developer tools → Application/Storage → Cookies</div>
+
+  <button id="save">Save</button>
+  <button id="test">Test Connect</button>
+
+  <div id="status" class="hint" style="margin-top:10px;"></div>
+
+  <script src="crypto.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>
